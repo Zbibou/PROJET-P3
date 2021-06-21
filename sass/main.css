@@ -1,0 +1,9 @@
+body {
+  background: blue;
+}
+
+h1 {
+  -webkit-column-rule-color: red;
+          column-rule-color: red;
+}
+/*# sourceMappingURL=main.css.map */
