@@ -8,4 +8,40 @@ a {
   text-decoration: none;
 }
 
+.logo {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 5px 5px lightgrey;
+  margin-bottom: 5px;
+}
+.logo .logo-haut {
+  margin-top: 19px;
+  margin-bottom: 8px;
+}
+.logo .logo-retour {
+  justify-content: center;
+}
+
+.footer {
+  background-color: #353535;
+  color: white;
+  padding: 10px;
+}
+.footer .footer_container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.footer .footer_container .footer_titre {
+  font-family: shrikhand, cursive;
+  font-size: larger;
+  margin-top: 0px;
+}
+.footer .footer_container .footer_text {
+  margin: 0.5rem 0;
+}
+.footer .footer_container .footer_icone {
+  margin-right: 9px;
+}
+
 /*# sourceMappingURL=style.css.map */
