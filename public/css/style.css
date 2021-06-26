@@ -13,13 +13,16 @@ a {
   justify-content: center;
   box-shadow: 0px 5px 5px lightgrey;
   margin-bottom: 5px;
+  width: 100%;
 }
 .logo .logo-haut {
   margin-top: 19px;
   margin-bottom: 8px;
 }
 .logo .logo-retour {
-  justify-content: center;
+  position: absolute;
+  top: 1.5rem;
+  left: 1rem;
 }
 
 .footer {
@@ -33,15 +36,32 @@ a {
   padding: 1rem;
 }
 .footer .footer_container .footer_titre {
-  font-family: shrikhand, cursive;
-  font-size: larger;
-  margin-top: 0px;
+  filter: invert(100%);
+  width: 105px;
+  height: 15px;
+  padding: 2rem 0 1.5rem 0;
+  margin: 0 0 0 -10px;
 }
 .footer .footer_container .footer_text {
   margin: 0.5rem 0;
 }
 .footer .footer_container .footer_icone {
   margin-right: 9px;
+}
+
+.local {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0 1rem 0;
+  background-color: #eaeaea;
+}
+.local .local__icon {
+  margin: 0 1.5rem 0 -2rem;
+}
+.local .local__texte {
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

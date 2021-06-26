@@ -1,0 +1,17 @@
+.local
+{
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    background-color: #eaeaea;
+        .local__icon
+        {
+            margin: 0 1.5rem 0 -2rem;
+        }
+        .local__texte
+        {
+            font-size: 1.2rem;
+        }
+}
