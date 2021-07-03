@@ -84,6 +84,10 @@ h3
 {
     display: grid;
     background: #f6f6f6;
+    .restaurant__bloc
+    {
+        margin: 0 20px 0 20px;
+    }
     .restaurant__menu
     {
         position: relative;
@@ -114,4 +118,35 @@ h3
         top: 12px;
         right: 10px; 
     }
+    .restaurant__titre
+    {
+       margin-top: -20px;
+       .restaurant__grosTitre
+       {
+           margin-left: 13px;
+       }
+       .restaurant__localisation
+       {
+           margin-top: -19px;
+           margin-left: 13px;
+       }
+    }
+    .restaurant__blocHeart
+    {
+        margin-top: -56px;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 22px;
+        .restaurant__heartWhite
+        {
+            padding-left: 13px;
+            font-size: 27px;  
+        }
+        .restaurant__heartRose
+        {
+            margin-left: -19px;
+            color: transparent;
+            font-size: 27px;
+        }
+    }   
 }
