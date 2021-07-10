@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     padding: 1rem 0 1rem 0;
-    background-color: #eaeaea;
+    background-color: $color__fontlocalisation;
         .local__icon
         {
             margin: 0 1.5rem 0 -2rem;
@@ -29,22 +29,23 @@ h3
     padding: 1px 1px 24px 1px;
 
 }
-.btn
+.boutonGeneral
 {
     border-radius: 2rem;
     border: 0;
     color: white;
     padding: 1rem;
     background-image:  radial-gradient(ellipse farthest-corner at 20px 0, #FF79DA 0%, #9356DC 100%);
-
+    width: 200px;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 13%);
 }
 .fonction
 {
-    width: 100%;
+    padding: 0 1rem;
     .fonction__titre
     {
         text-align: start;
-        padding: 3.5rem 0 2rem 0;
+        padding: 1.5rem 0 2rem 0;
         grid-column-start: 2;
     }
     .fonction__step
@@ -56,6 +57,7 @@ h3
         margin: 0 0 25px 0;
         padding: 1.8rem 0 1.3rem 0;
         width: 100%;
+        box-shadow:  0.25rem 0.25rem 0.5rem rgb(0 0 0 / 13%);
     }
     .fonction__step__number
     {
@@ -64,7 +66,7 @@ h3
         border: 1px solid #9356dc;
         border-radius: 50%;
         padding: 4px 8px 4px 8px;
-        margin: 0 1.5rem 0 14px;  
+        margin: 0 1.5rem 0 -11px;  
     }
     .fonction__step__icone
     {
@@ -84,6 +86,10 @@ h3
 {
     display: grid;
     background: #f6f6f6;
+    .restaurant__blocTitre
+    {
+        margin-left: 1rem;
+    }
     .restaurant__bloc
     {
         margin: 0 20px 0 20px;
@@ -92,7 +98,6 @@ h3
     {
         position: relative;
         background-color: #fff;
-        width: 100%;
         height: 250px;
         border-radius: 1.5rem;
         -webkit-box-shadow: 3px 8px 8px #dedada;
@@ -149,4 +154,31 @@ h3
             font-size: 27px;
         }
     }   
+}
+@media screen and (min-width: 768px)
+{
+    .fonctionBloc
+    {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 20px;
+        .fonction__step
+        {
+            width: 93%;
+            padding-left: 11px;
+        }
+    }
+}
+@media screen and (min-width: 900px)
+{
+    .restaurant__bloc
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 10px;
+    }
+    .restaurant__menu
+    {
+        width: 96%;
+    }
 }

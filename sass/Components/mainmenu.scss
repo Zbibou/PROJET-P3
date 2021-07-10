@@ -1,3 +1,7 @@
+h2
+{
+    font-family: shrikhand, sans-serif;
+}
 .imageHaute
 {
     grid-column-start: 2;
@@ -8,17 +12,40 @@
 .sectionMenu
 {
     background-color: #f6f6f6;
+    border-top-left-radius: 40px 40px;
+    border-top-right-radius: 40px 40px;
+    transform: translateY(-11px);
 }
 .titre__restaurant
 {
     position: relative;
     border-radius: 1.5rem 1.5rem 0 0;
-    padding: 2.4rem 0 0 1.5rem;
+    padding: 0.4rem 0 0 1.5rem;
     margin-top: -2rem;
+    .titre__blocCoeur
+    {
+        margin-top: -51px;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 22px;
+        margin-bottom: -30px;
+        margin-top: -51px;
+        .titre__coeurBlanc
+        {
+            font-size: 27px;
+        }
+        .titre__coeurRose
+        {
+            margin-left: -27px;
+            color: transparent;
+            font-size: 27px;
+        }
+    }
 }
 .menu
 {
     grid-column-start: 2;
+    margin: 0px 20px 0 20px;
     .menu__titre
     {
         padding: 3rem 0 .5rem;
@@ -28,13 +55,13 @@
     {
         width: 2.5rem;
         border-top: 3px solid #99e2d0;
-        margin: .5rem 0 0 0;
+        margin: -1rem 0 0 0;
     }
     .menu__descision
     {
         position: relative;
         background-color: #fff;
-        height: 70px;
+        height: 48px;
         padding: 0 0 15px 0;
         margin: 1rem 0 12px 0;
         cursor: pointer;
@@ -44,5 +71,47 @@
         border-radius: 1.5rem;
         box-shadow: 3px 3px 10px #dedada;
         grid-column-start: 2;
+        .menu__description
+        {
+            margin-top: -10px;
+        }
+        .menu__textGras
+        {
+            margin-left: 13px;
+        }
+        .menu__textNormal
+        {
+            margin-top: -19px;
+            margin-left: 13px;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .menu__prix
+        {
+            margin-top: -35px;
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 22px;
+            overflow: hidden;
+            white-space: nowrap;
+        }
     }
 }
+.boutonCommander
+{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 29px;
+    margin-top: 33px;
+}
+@media screen and (min-width: 900px)
+{
+    .menuBloc
+    {
+        display: flex;
+    }
+    .menu
+    {
+        width: 29%;
+    }
+}    
