@@ -85,6 +85,8 @@ h2
             margin-left: 13px;
             overflow: hidden;
             white-space: nowrap;
+            text-overflow: ellipsis;
+            margin-right: 60px;
         }
         .menu__prix
         {
